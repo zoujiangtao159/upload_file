@@ -1,0 +1,55 @@
+{
+	"pv" : 1,
+	"publisher_id" : "5176",
+	"from" : 1,
+	"timestamp" : "1505815863.1098204",
+	"imp" : {
+		"slot_id" : "4",
+		"ad_type" : 0,
+		"amount" : 100
+	},
+	"app" : {
+		"id" : "1",
+		"name" : "",
+		"ver" : "1.0",
+		"appkey" : "app_key",
+		"bundle" : "com.testtttt.test",
+		"keywords" : ""
+	},
+	"device" : {
+		"geo" : {
+			"lat" : 0,
+			"lon" : 0,
+			"mcc" : "",
+			"mnc" : "",
+			"carrier" : ""
+		},
+		"screen" : {
+			"dpi" : 1,
+			"w" : 375,
+			"h" : 667,
+			"orientation" : 2,
+			"density" : 0
+		},
+		"tzone" : "GMT+08:00",
+		"idfa" : "511F7987-6E2F-473A-BFED-E4C52CB5A6DC",
+		"idfv" : "21A8AB3A-8C76-4076-856F-F689352CC635",
+		"limit" : true,
+		"aid" : "aid",
+		"gaid" : "goole_id_goole_id",
+		"brand" : "apple",
+		"model" : "iPhone7,2",
+		"lang" : "zh-Hans-CN",
+		"sdkv" : "1.1.0",
+		"gp" : 0,
+		"pf" : 1,
+		"osv" : "10.2.1",
+		"ispcode" : "isp",
+		"nt" : 0,
+		"Ijb" : 0,
+		"user_id" : "",
+		"udid" : "1BD123AF-6972-40D9-89A4-1A0B679D80EC"
+	},
+	"bcat" : [],
+	"badv" : []
+}

@@ -3,6 +3,8 @@ import itertools
 import requests
 import time
 
+from cryptography.hazmat.primitives.hashes import SHA256
+
 
 def upload_file():
     upload_url = "http://api.pingstart.com/v3/sdk-api"
@@ -24,7 +26,10 @@ def upload_file():
     '''
     config_result = config_set()
     for data in config_result:
-        req = requests.post(upload_url,data=json.dumps(data), timeout=20)
+        try:
+            req = requests.post(upload_url,data=json.dumps(data), timeout=20)
+        except Exception as e:
+            print(e,data)
         ads_result = json.loads(req.content)
         try:
             for i in range(len(ads_result['ads'])):
@@ -69,7 +74,7 @@ def upload_file():
 
 def config_set():
     pv = [1]     #协议版本
-    publisher_id = ["5176","5276"]  #媒体id
+    publisher_id = ["5176"]  #媒体id
     from_0 = [1]  #1:onlie,2:offline
     timestamp =[str(time.time())] #unix时间戳
     bcat = [[]]
@@ -77,9 +82,9 @@ def config_set():
 
 
 #imp:
-    slot_id = ["4","9"] #广告位
+    slot_id = ["6"] #广告位
     ad_type = [0]  #1.video 2.native
-    amount = [100,1]   #请求广告数量
+    amount = [3]   #请求广告数量
 
     imp_list_result = []
     for i in range(len(slot_id)):
@@ -309,3 +314,5 @@ upload_file()
         ]
     }
 """
+
+
